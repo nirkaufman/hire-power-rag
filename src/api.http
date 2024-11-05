@@ -6,4 +6,9 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:5174/api/users
+POST http://localhost:5174/api/users
+Content-Type: application/json
+
+{
+  "query": "Find me a sad, unhappy developer"
+}
