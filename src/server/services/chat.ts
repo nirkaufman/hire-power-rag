@@ -30,10 +30,10 @@ export async function getChatResponse(userMessage: string): Promise<ChatMessage[
   const formattedMessage = { role: "user", content: userMessage }
   const chatResponse = await newMessage(chatHistory, formattedMessage)
 
-  // if(userMessage === "reset") {
-  //   chatHistory = [];
-  //   return chatHistory;
-  // }
+  if(userMessage === "reset") {
+    chatHistory = [];
+    return chatHistory;
+  }
 
   chatHistory.push(formattedMessage, chatResponse)
 

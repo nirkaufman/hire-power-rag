@@ -33,7 +33,7 @@ import {NgClass} from "@angular/common";
 export default class ChatPage {
   private readonly chatService = inject(ChatService);
 
-  @ViewChild('chatContainer') private chatContainer: ElementRef;
+  // @ViewChild('chatContainer') private chatContainer: ElementRef;
 
   chatResponse = toSignal(this.chatService.chatResponse$, { initialValue: [] });
 

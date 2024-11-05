@@ -1,6 +1,9 @@
-POST http://localhost:5173/api/chat
+POST http://localhost:5174/api/chat
 Content-Type: application/json
 
 {
   "prompt": "Hello, who are you?"
 }
+
+###
+GET http://localhost:5174/api/users
